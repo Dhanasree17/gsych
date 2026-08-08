@@ -75,7 +75,7 @@ def speak(text):
 
 def listen_for_command():
     with sr.Microphone() as source:
-        print("Listening for command...")
+        print("Listening for command.")
         recognizer.adjust_for_ambient_noise(source)
         audio = recognizer.listen(source)
         try:
